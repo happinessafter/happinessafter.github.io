@@ -1,0 +1,101 @@
+<head>
+
+<title>i'm more tater than you</title>
+
+</head>
+
+
+<style>
+/*this block of code makes an image take up the full background of a page*/
+
+html { 
+  background-color: #414142; 
+}
+/*this block controls the styling of our text*/
+h1 {
+	text-align: center;
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: 50px;
+	margin: 10px 0px 5px 0px;
+}
+
+h2 {
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	margin: 0px 0px 10px 0px;
+}
+
+#gallery img {
+	align-items: center;
+	height: 450px;
+}
+
+.button-display-left {
+	background-color: #c8cace;
+    border: none;
+    padding: 20px 25px;
+    margin: 10px 0px 0px 0px;
+    display: inline-block;
+}
+
+.button-display-left:hover {
+	background-color: #9b836e;
+	transition: all 0.2s;
+}
+
+.button-display-right {
+	background-color: #c8cace;
+    border: none;
+    padding: 20px 25px;
+    margin: 10px 0px 0px 5px;
+    display: inline-block;
+}
+
+.button-display-right:hover {
+	background-color: #9b836e;
+	transition: all 0.2s;
+}
+
+</style>
+<body>
+<h1>I have a love-hate relationship with potatoes</h1>
+<h2>warning: strobes</h2>
+<div id="gallery" align="middle">
+	<img class = "mySlides" src="PotatoFlew.gif">
+	<img class = "mySlides" src="aestheticpotato.jpg">
+	<img class = "mySlides" src="potatodancing.gif">
+	<img class = "mySlides" src="brownpotatodancing.gif">
+	<img class = "mySlides" src="shadespotatodancing.gif">
+	<img class = "mySlides" src="realpotatodancing.gif">
+	<img class = "mySlides" src="PotatoRave.gif">
+	<img class = "mySlides" src="levitatingpotato.gif">
+	<img class = "mySlides" src="potatobaby.png">
+	<img class = "mySlides" src="diepotato.gif">
+	<img class = "mySlides" src="nottoday.gif">
+		<script>
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+		</script>
+		<button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="button-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+<audio id="audioTrack" src="Question.mp3" preload="auto" autoplay loop></audio>
+</body>

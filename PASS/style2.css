@@ -1,0 +1,104 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Oswald;
+
+}
+
+h1, h2, h3 {
+	font-family: Open+Sans;
+
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+#navigation {
+	background: #222222;
+	color: #ffffff;
+
+}
+
+#navigation h1 {
+	display: inline-block;
+	padding: 10px;
+}
+
+#navigation ul {
+	float: right;
+	list-style: none;
+	padding: 15px;
+}
+
+#navigation ul li {
+	float: left;
+	padding: 15px;
+}
+
+#navigation a {
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+#navigation a:hover {
+	color: blue;
+}
+
+#table-tennis {
+	height: 400px;
+	background: url(table-tennis.jpg) bottom;
+}
+
+#header {
+	text-align: center;
+	padding: 50px 0;
+	background: #efefef;
+}
+
+#header h2 {
+	text-shadow: 2px 2px 20px gray;
+}
+
+#main {
+	padding: 50px 0;
+}
+
+#main h2, h3 {
+	padding: 20px;
+}
+
+.button-display-left {
+	background-color: #c8cace;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

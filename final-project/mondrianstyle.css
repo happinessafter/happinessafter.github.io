@@ -1,0 +1,10 @@
+html {
+	background-color: gray;
+}
+
+img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	height: 100%;
+}

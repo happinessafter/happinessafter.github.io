@@ -1,0 +1,23 @@
+<script src="../lib/tracery.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<h1>Help</h1>
+<button onclick="generate()">Generate</button>
+<script>
+var grammarObj = {
+	"S": ["Some people #Action#, other people #Randoaction#", "#Person# just came out to have a good time and is honestly feeling so attacked right now", "#Meme# Becomes #Movement# Symbol, #Peeps# #Reaction# #Link#"],
+	"Action": ["Guy Furry", "White Shadow", "Mr. Tubbs", "Peaches", "Speckles", "Spot", "Ganache", "Marshmallow", "Melange", "Pickles", "Macchiato"],
+	"Randoaction": ["Gluttony", "Sloth", "Apathy", "Pure Evil", "Gambling Habit", "Bird Addiction", "Yard Promiscuity", "Disloyalty", "Catnip Addiction", "Sashimi Addiction"],
+	"Person": ["Is Sordidly Revealed", "Is Shockingly Revealed", "Is Found Out", "Is Found", "Explodes Online", "Is Disseminated Online", "Goes Viral"],
+	"Meme": ["#Fans# Lost", "#Fans# Surprised", "#Fans# Heartbroken", "#Fans# Disheartened", "#Fans# Don't Know What To Do", "#Fans# In Tears", "#Fans# Up In Arms", "#Fans# Disgruntled", "#Fans# Upset"],
+	"Movement": ["Fans", "Supporters", "Players", "Virtual Cat Lovers"]
+	"Peeps": ["Whoop"]
+	"Reaction": ["Nah"]
+	"Link": [<img src="https://i.kinja-img.com/gawker-media/image/upload/s--frUpxcHP--/c_scale,f_auto,fl_progressive,q_80,w_800/ju0tngv6doiqtkxfgpsb.gif"/>]
+}
+var grammar = tracery.createGrammar(grammarObj)
+function generate(){
+	var t = grammar.flatten("#S#");
+	$('h1').text(t);
+}
+</script>

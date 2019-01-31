@@ -1,0 +1,20 @@
+<script src="../lib/tracery.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<h1>Help</h1>
+<button onclick="generate()">Generate</button>
+<script>
+var grammarObj = {
+	"S": ["#Cat#'s #Activity# #Action#, Neko Atsume #Reaction#"],
+	"Cat": ["Guy Furry", "White Shadow", "Mr. Tubbs", "Peaches", "Speckles", "Spot", "Ganache", "Marshmallow", "Melange", "Pickles", "Macchiato"],
+	"Activity": ["Gluttony", "Sloth", "Apathy", "Pure Evil", "Gambling Habit", "Bird Addiction", "Yard Promiscuity", "Disloyalty", "Catnip Addiction", "Sashimi Addiction"],
+	"Action": ["Is Sordidly Revealed", "Is Shockingly Revealed", "Is Found Out", "Is Found", "Explodes Online", "Is Disseminated Online", "Goes Viral"],
+	"Reaction": ["#Fans# Lost", "#Fans# Surprised", "#Fans# Heartbroken", "#Fans# Disheartened", "#Fans# Don't Know What To Do", "#Fans# In Tears", "#Fans# Up In Arms", "#Fans# Disgruntled", "#Fans# Upset"],
+	"Fans": ["Fans", "Supporters", "Players", "Virtual Cat Lovers"]
+}
+var grammar = tracery.createGrammar(grammarObj)
+function generate(){
+	var t = grammar.flatten("#S#");
+	$('h1').text(t);
+}
+</script>

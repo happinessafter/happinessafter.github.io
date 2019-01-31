@@ -1,0 +1,165 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	
+}
+
+#header {
+	background: #222222;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 3px 5px #c0c1c4, 0 4px 11px 0 #c0c1c4
+}
+
+#header h1 {
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	font-size: 40px;
+}
+
+#header h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#header ul {
+	list-style: none;
+	float: center;
+}
+
+#header ul li {
+	padding: 15px;
+	display: inline-block;
+}
+
+#header a{
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+#header a:hover {
+	color: #6294e5;
+}
+
+#text {
+	width: 80%;
+	margin: auto;
+}
+
+#text h1 {
+	font-family:'Ubuntu', sans-serif;
+	text-align: left;
+	padding: 20px 0px 0px 0px;
+	font-size: 40px;
+}
+
+#text h2 {
+	font-family:'Ubuntu', sans-serif, bold;
+	text-align: left;
+	font-size: 25px;
+}
+
+#text ul {
+	font-family:'Source Sans Pro', sans-serif;
+	padding: 15px;
+	font-size: 17px;
+	overflow: auto;
+	white-space: pre-wrap;
+	list-style-type: circle;
+}
+
+#text li {
+	font-family:'Source Sans Pro', sans-serif;
+	padding: 15px;
+	font-size: 17px;
+	overflow: auto;
+	white-space: pre-wrap;
+	list-style-type: circle;
+}
+
+#text img {
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gallery img {
+	align-items: center;
+	height: 300px;
+}
+
+.button-display-left {
+	background-color: #c8cace;
+    border: none;
+    padding: 20px 25px;
+    margin: 10px 15px 5px 0px;
+    display: inline-block;
+}
+
+.button-display-left:hover {
+	background-color: #6294e5;
+	transition: all 0.2s;
+}
+
+.button-display-right {
+	background-color: #c8cace;
+    border: none;
+    padding: 20px 25px;
+    margin: 10px 15px 5px 30px;
+    display: inline-block;
+}
+
+.button-display-right:hover {
+	background-color: #6294e5;
+	transition: all 0.2s;
+}
+
+#gallery pre {
+	font-family:'Quicksand', sans-serif;
+	padding: 15px;
+	overflow: auto;
+	white-space: pre-wrap;
+}
+
+.linkclass1 {
+	text-decoration: none;
+	color: black;
+}
+
+.linkclass1:hover {
+	color: #a87df2;
+	font-family: 'Cedarville Cursive', cursive;
+	transition: all 0.2s;
+	font-size: 50px;
+}
+
+.linkclass2 {
+	text-decoration: none;
+	color: black;
+}
+
+
+.linkclass2:hover {
+	color: #4ea07d;
+	font-family: 'Indie Flower', cursive;
+	transition: all 0.2s;
+	font-size: 50px;
+}
+
+#footer {
+	background: #222222;
+	color: #ffffff;
+	text-align: right;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 3px 5px #c0c1c4, 0 4px 11px 0 #c0c1c4
+}
+
+
+
+

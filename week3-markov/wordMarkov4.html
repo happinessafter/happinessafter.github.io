@@ -1,0 +1,15 @@
+<h1>"I'm still having trouble with this pls help"</h1>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+var txt;
+var markov = new MarkovGeneratorWord(10,200)
+$.get("Fem.html", function(text) {
+     markov.feed(text)
+});
+function generate(){
+	var t = markov.generate()
+	$('body').append("<p>"+t+"</p>")
+}
+</script>
+<button onclick="generate()">Generate</button>

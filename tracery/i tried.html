@@ -1,0 +1,26 @@
+<script src="../lib/tracery.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<h1>Help</h1>
+<button onclick="generate()">Generate</button>
+<script>
+var grammarObj = {
+	"S": ["You see, I'm really trying my best to #Action#, but it's just not working out #Time#. See, there's this one #Person# in my #Subject# class this semester, and he #Reaction#. This #Person# has the #actionnoun# to #Action2# and #MeDie#. He #Trait# and it's just #exclamation#. Idek what to do anymore—I'd let him #Mnerm#...then again, we've never even talked."],
+	"Action": ["like this chicken", "wean myself of attractive Asian men", "keep it together", "maintain some semblance of composure", "put up a pretense of poise", "be a good", "not fantasize about random ppl", "exercise self-discipline", "keep crushing to a minimum", "not catch feelings", "dodge them fuccbois", "be an independent woman who don't need no man", "B0$$ A$$ Single B**ch™", "stay on top of my own life", "build my dream single life free of relationship drama", "a baby llama who don't want no drama", "single and off-the-dang-market"],
+	"Time": ["for some damn reason", "because fate personified has a cruel and ironic sense of humor", "because luck sucks more d*ck than me", "since Scott Pilgrim wouldn't even envy me", "because dudes are still a thing", "because I'm thirsty af", "because I'm an idiot", "because I want what I can't have", "because I must be missing something emotionally"],
+	"Person": ["kid", "guy", "dude", "fine a$$ boi", "boy"],
+	"Subject": ["chemistry (ironic I know)", "Romantic Lit (ironic I know)", "math", "calc", "stats", "orgo", "biochem", "history", "Sexuality and Gen Studies"],
+	"Reaction": ["gmt", "annoys tf outta me", "always gotta do me wrong by just being there", "just kills me", "slays me", "distracts me"],
+	"actionnoun": ["gall", "audacity", "nerve", "balls", "shamelessness"],
+	"Action2": ["crack his neck next to me", "sit next to me", "crack his back", "wear grey sweatpants", "take off his sweatshirt and pull up his shirt too *by accident*", "yawn", "just exist", "rub his neck", "have veiny hands", "be a dude", "crack his jaw", "stretch", "manspread", "look me in the eye", "talk to other girls", "ask me for a pencil", "apologize when he brushes past me", "roll up his sleeves"],
+	"MeDie": ["I just deflate a little", "I pass out", "I literally can't even", "I become smol and angery", "I feel the urge to meme my feelings", "it doesn't help my compulsive online stalking", "I need to crawl under a rock for the rest of my life", "I am slain", "it's UNACCEPTABLE", "it's illegal", "it's a crime against humanity—specifically agaiNST THIS HUMAN", "it's personally offensive", "it's the most not okay thing I've ever experience like wow why don't you just kill my cat too"],
+	"Trait": ["plays water polo", "plays football", "runs track", "swims", "plays lacrosse", "is really sweet to his mom", "is actually nice to his siblings", "actually cares about school", "is polite"],
+	"exclamation": ["ugggghhhhhh", "grrrrrrr", "unf", "STILL UNACCEPTABLE", "gaaahhhh"],
+	"Mnerm": ["choke me anytime", "punch me in the face three times even", "kick me if he wants", "step on me"]
+}
+var grammar = tracery.createGrammar(grammarObj)
+function generate(){
+	var t = grammar.flatten("#S#");
+	$('h1').text(t);
+}
+</script>
